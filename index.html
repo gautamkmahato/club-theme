@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="social_media.css">
+</head>
+<body>
+    <section>
+        <!-- navbar section -->
+      <div class="navbar-fixed">
+            <nav class="navbar" id="mynav">
+           <div class="nav-wrapper container">
+             <a href="#" class="brand-logo nav-logo">Logo</a>
+             <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+                   <i class="material-icons">menu</i>
+             </a>
+             <ul class="right hide-on-med-and-down">
+               <li><a href="#home">Home</a></li>
+               <li><a href="about.html">About Us</a></li>
+               <li><a href="#">Events</a></li>
+               <li><a href="members.html" target="_blank">Members</a></li>
+               <li><a href="gallery.html" target="_blank">Gallery</a></li>
+               <li><a href="#contact">Contact</a></li>
+             </ul>
+           </div>
+         </nav>
+        </div>
+
+        <!-- mobile navbar -->
+        <ul class="sidenav" id="mobile-nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#popular">Events</a></li>
+            <li><a href="members.html">Members</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </section>
+
+    <!-- landing section -->
+    <section class="landing">
+        <div id="wrapper">
+
+            <div id="title">
+                <div class="p-img">
+                    <img id="landing-logo" src="https://res.cloudinary.com/pashagord/image/upload/v1468545314/Portfolio/logos/codepen_logo.png"/>
+                </div>
+                <h2 class="landing-head">ISOI VIT Vellore</h2>
+                <h3>Together we can make a difference in the world of academia</h3>
+                <a class="waves-effect waves-light btn know-btn">Know More</a>
+            </div>
+        
+            <canvas id="canvas" width="1950px" height="1000px"></canvas>
+            <canvas id="canvasbg" width="1950px" height="1000px"></canvas>
+        
+        </div>
+    </section>
+    
+<!-- event section -->
+<section class="countdown-timer container">
+    <div class=" "></div>
+    <div class="row">
+        <div class="col s12 m2"></div>
+
+        <div class="col s12 m8">
+            <h2>Events Name</h2>
+            <p id="event-tag">Lorem Ipsum is simply dummy text of the printingncl.</p>
+            <p id="event-time-para">Event starts In</p>
+            <div id="clockdiv">
+                <div>
+                    <span class="days"></span>
+                    <div class="smalltext">Days</div>
+                </div>
+                <div>
+                    <span class="hours"></span>
+                    <div class="smalltext">Hours</div>
+                </div>
+                <div>
+                    <span class="minutes"></span>
+                    <div class="smalltext">Minutes</div>
+                </div>
+                <div>
+                    <span class="seconds"></span>
+                    <div class="smalltext">Seconds</div>
+                </div>
+            </div>
+            <br>
+            <div class="buttons">
+                <a href="">
+                    <button class="btn-hover color-4">Register Now</button>
+                </a>
+            </div>
+            
+        </div>
+
+        <div class="col s12 m2"></div>
+    </div>
+   
+</section>
+
+
+<!-- achievement section -->
+<section class="ach section scrollspy  container">
+        <div class="ach-section">
+            <h3 id="ach-head">Our Achievements</h3>
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="card" id="back">
+                            <div>
+                                <img src="icon/event.png"  class="card-image">
+                                <p class="card-name">Events</p>
+                            </div>
+                            <div class="card-content">
+                                <p class="card-para">I am a very simple card. I am good at containing small</p>
+                                <a class="waves-effect blue-grey darken-4 btn card-btn modal-trigger" href="#modal1">Read More</a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="card" id="back">
+                            <div>
+                                <img src="icon/research.png"  class="card-image">
+                                <p class="card-name">Workshop</p>
+                            </div>
+                            <div class="card-content">
+                                <p class="card-para"> of information.I am convenient because I markup to use effectively.</p>
+                                <a class="waves-effect blue-grey darken-4 btn card-btn modal-trigger" href="#modal1">Read More</a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="card" id="back">
+                            <div>
+                                <img src="icon/workshop.png"  class="card-image">
+                                <p class="card-name">Technical / Research</p>
+                            </div>
+                            <div class="card-content">
+                                <p class="card-para">I am a very simple card. I am good at containing markup to use effectively.</p>
+                                <a class="waves-effect blue-grey darken-4 btn card-btn modal-trigger" href="#modal1">Read More</a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- models of achievenments section -->
+      <!-- Modal Trigger -->
+    
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4 class="model-head">Modal Header</h4>
+          <p class="model-para">I am a very simple card. I am good atI am a very simple card. 
+                simple card. I am good atI amI am good at containing containing 
+                simple card. I am good atI amA bunch of text</p>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+
+    <!-- section Gallery -->
+    <div class="container">
+        <div class="mycontainer">
+
+            <h1 class="heading">Image Gallery</h1>
+        
+            <div class="gallery">
+        
+                <div class="gallery-item">
+                    <img class="gallery-image" src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=500&h=500&fit=crop" alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
+                </div>
+        
+                <div class="gallery-item">
+                    <img class="gallery-image" src="https://images.unsplash.com/photo-1515260268569-9271009adfdb?w=500&h=500&fit=crop" alt="sunset behind San Francisco city skyline">
+                </div>
+        
+                <div class="gallery-item">
+                    <img class="gallery-image" src="https://images.unsplash.com/photo-1506045412240-22980140a405?w=500&h=500&fit=crop" alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan">
+                </div>
+        
+                <div class="gallery-item">
+                    <img class="gallery-image" src="https://images.unsplash.com/photo-1514041181368-bca62cceffcd?w=500&h=500&fit=crop" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
+                </div>
+        
+                <div class="gallery-item">
+                    <img class="gallery-image" src="https://images.unsplash.com/photo-1445810694374-0a94739e4a03?w=500&h=500&fit=crop" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
+                </div>
+        
+                <div class="gallery-item">
+                    <img class="gallery-image" src="https://images.unsplash.com/photo-1486334803289-1623f249dd1e?w=500&h=500&fit=crop" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+                </div>
+            
+            </div>
+            
+        </div> 
+    </div>
+    
+
+<!-- section contact -->
+    <section id="contact" class="section section-contact scrollspy effect5 container">
+        <div>
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="card-panel card-back white-text center">
+                <i class="material-icons">email</i>
+                <h4 id="mycard-h4">Contact us for Sponsership</h4>
+                <p class="contact-para"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.with desktop publishing software like AldusLorem Ipsum is simply dummy text of the printing andtypesetting industry.with desktop publishing softwarelike Aldus.</p>
+              </div>
+              <ul class="collection with-header mycard-adress">
+                <li class="collection-header">
+                  <h4>location</h4>
+                </li>
+                <li class="collection-item mycard-li">ISOI Vit</li>
+                <li class="collection-item mycard-li">Vit University Vellore Tamilnadu</li>
+                <li class="collection-item mycard-li">8973433301</li>
+              </ul>
+            </div>
+    
+            <div class="col s12 m6">
+              <div class="card-panel grey lighten-3 contact-card">
+                <h4 id="mycard-h4" style="color:black;">Please fill out this form</h4>
+                <div class="input-field">
+                  <input type="text" placeholder="name">
+                </div>
+                <div class="input-field">
+                  <input type="text" placeholder="email">
+                </div>
+                <div class="input-field">
+                  <input type="text" placeholder="phone">
+                </div>
+                <div class="input-field">
+                  <textarea class="materialize-textarea" placeholder="enter message"></textarea>
+                </div>
+                <input type="submit" class="btn" value="submit">
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- footer section-->
+<footer class="section scrollspy">
+        <div class="section center foot container">
+            <div class="row">
+                <div class="col s6 m6">
+                    <p>
+                        <span id="foot-head-1">Contact Us</span><br>
+                    </p>
+                    <p class="foot-contact" >
+                        <span>ISOI Vit</span><br>
+                        <span>abc@gmail.com</span><br>
+                        <span>9873547800</span>
+                    </p>
+                </div>
+                <div class="col s6 m6">
+                    <p>
+                        <span id="foot-head-2">Follow Us</span><br>
+                    </p>
+                    <p class="foot-icon">
+                        <a href="#" class="white-text">
+                        <i class="fab fa-facebook fa-3x"></i>
+                        </a>
+                        <a href="#" class="white-text">
+                        <i class="fab fa-twitter fa-3x"></i>
+                        </a>
+                        <a href="#" class="white-text">
+                        <i class="fab fa-instagram fa-3x"></i>
+                        </a>
+                        <a href="#" class="white-text">
+                        <i class="fab fa-linkedin fa-3x"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <p id="copy">© 2017 ISOI Vit - Designed by ISOI team</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script> 
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- my javscript -->
+    <script>
+        // mobilenav -->
+        const sidenav = document.querySelector('.sidenav');
+        M.Sidenav.init(sidenav, {});
+
+        //transparent navbar
+        $(document).ready(function(){
+
+          $(window).scroll(function(){
+
+                if($(window).scrollTop()>300){
+                    $('nav').addClass('blue-grey darken-4');
+                }
+                else{
+                    $('nav').removeClass('blue-grey darken-4');
+                }
+          })
+        });
+        // slider-part -->
+        const slider = document.querySelector('.slider');
+            M.Slider.init(slider, {
+            indicators: false,
+            height: 500,
+            width:1000,
+            transition: 500,
+            interval: 4000,
+        });
+        // lightbox -->
+    const mb = document.querySelectorAll('.materialboxed');
+    M.Materialbox.init(mb, {})
+
+    // nav scrollspy -->
+    const ss = document.querySelectorAll('.scrollspy');
+    M.ScrollSpy.init(ss, {});
+    // model -->
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems, {
+        opacity: 0.5,
+        inDuration: 250,
+        outDuration: 250,
+        preventScrolling: true,
+        dismissible: true,
+        startingTop:'4%',
+        endingTop:'10%',
+    });
+    });
+    </script>
+   
+</body>
+</html>

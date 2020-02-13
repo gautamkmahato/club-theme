@@ -1,0 +1,342 @@
+body {
+	font-family: 'Roboto Slab', serif;
+	font-size: 14px;
+	line-height: 1.67;
+	color: #444;
+	background-color: #121518;
+}
+
+.mynav{
+    background-color: #121518;
+}
+a {
+	color: #e45245;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/*  Team Starts */
+.team-members {
+	transform: rotate(-45deg);
+}
+.team-members li > div {
+	float: left;
+	width: 20%;
+}
+
+.team-members li:nth-child(2) > div:first-child {
+	margin-left: 20%;
+}
+
+.team-members li:last-child > div:first-child {
+	margin-left: 40%;
+}
+
+.member-details > div {
+	background-color: #ddd;
+	margin: 5px;
+}
+.member-details img {
+	transform: rotate(45deg) translate(0, 15px) scale(1.2);
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+/* hover content - style */
+.member-details > div {
+	position: relative;
+	overflow: hidden;
+}
+
+.member-info {
+	position: absolute;
+	top: 50%;
+	transform: rotate(45deg) translate(-12px, 15px);
+	left: 0;
+	right: 0;
+	z-index: 2;
+	text-align: center;
+}
+
+.member-info h3,
+.member-info p {
+	margin: 0;
+	color: #fff;
+	position: relative;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.member-info h3 {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 400;
+	top: -100px;
+}
+
+.member-info p {
+	font-weight: 300;
+	font-size: 12px;
+	bottom: -150px;
+}
+
+.member-details > div:after {
+	content: '';
+	background-image: linear-gradient(45deg, rgba(228, 82, 69, .8) 50%, transparent 50%);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	opacity: 0;
+	visibility: hidden;
+}
+
+/* hover content - onhover */
+.member-details *,
+.member-details > div:after {
+	cursor: pointer;
+	transition: all .4s ease;
+}
+
+.member-details:hover *,
+.member-details:hover > div:after {
+	opacity: 1;
+	visibility: visible;
+}
+
+.member-details:hover .member-info h3 {
+	top: 0;
+}
+
+.member-details:hover .member-info p {
+	bottom: 0;
+}
+
+/* Team overview */
+.team-overview {
+	padding-right: 15px;
+}
+.team-overview h2 {
+	text-transform: uppercase;
+	font-size: 22px;
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+
+.team-overview > a {
+	margin-bottom: 30px;
+	display: block;
+}
+
+.team-overview > a:before {
+	content: '';
+	width: 10px;
+	height: 2px;
+	position: relative;
+	top: -3px;
+	margin-right: 5px;
+	background-color: #ccc;
+	display: inline-block;
+}
+
+
+/* For centering elements - optional - Can use table,tablecell instead */
+.flex-center {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-center > div:first-child {
+	order: 2;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width : 992px) {
+	.sm-no-flex {
+		display: block;
+	}
+	.sm-no-float {
+		float: none !important;
+	}
+	.sm-text-center {
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width : 550px) {
+	.team-members li {
+		text-align: center;
+	}
+	.team-members li > div {
+		float: none;
+		display: inline-block;
+		width: 20%;
+		margin: 0 !important;
+	}
+	.team-members {
+		transform: rotate(0);
+	}
+	.member-details img {
+		transform: rotate(0) translate(0, 0);
+	}
+	.team-overview {
+		padding: 15px;
+	}
+	
+}
+
+@media only screen and (max-width : 399px) {
+	.team-members li > div {
+		width: 28%;
+	}
+}
+
+/* --------------------------------
+        my css
+    ------------------------------*/
+.about-nav{
+    background-color: #121518;
+}
+.mynavbar li a:hover {
+    background-color: white;
+    color: #20313b;
+  }
+.mynav-logo{
+    color: white;
+}
+
+/* video section */
+.myvideo{
+    width: 60%;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+@media only screen and (max-width: 600px) {
+    .myvideo{
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    #video{
+        width: 280px;
+        height: 200px;
+    }
+  }
+
+
+
+  @import "compass/css3";
+  .flex-container {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row wrap;
+      justify-content: space-around;
+ }
+  .flex-item {
+      padding: 5px;
+      width: 500px;
+      height: auto;
+      margin-top: 10px;
+      font-size: 14px;
+	  line-height: 1.67;      
+ }
+  
+
+
+
+  
+/* whAT we do section */
+.what{
+    background-color: whitesmoke;
+    color: black;
+    padding-bottom: 30px;
+  }
+  #what-head{
+    text-align: center;
+    font-size: 35px;
+    position: relative;
+    padding-bottom: 46px;
+    margin: 0;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+  }
+  .what-head-2{
+    font-size: 25px;
+    position: relative;
+    padding-bottom: 16px;
+    margin: 0;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    color: #515151;
+    -webkit-font-smoothing: antialiased;
+  }
+  #what-top-img{
+    width: 6%;
+    margin-left: 47%;
+    margin-right: 47%;
+    padding-top: 40px;
+    padding-bottom: 10px;
+  }
+  @media only screen and (max-width: 600px) {
+    #what-top-img{
+      width: 16%;
+      margin-left: 42%;
+      margin-right: 42%;
+      padding-top: 40px;
+      padding-bottom: 10px;
+    }
+  }
+  
+  
+/*footer section */
+.foot{
+	background-color: #121518;
+}
+#foot-head-1{
+	font-size: 27px;
+	color: white;
+  }
+  #foot-head-2{
+	font-size: 24px;
+	color: white;
+  }
+  .foot-contact span{
+	color: #d2d2d2;
+	font-size: 13px;
+  }
+  .foot-icon a{
+	padding: 10px;
+  }
+  #copy{
+	width: 40%;
+	margin-left: 30%;
+	margin-left: 30%;
+	color: white;
+	font-size: 14px;
+  }
+  @media only screen and (max-width: 600px) {
+	.foot-icon a{
+	  padding: 4px;
+	}
+	#copy{
+	  width: 84%;
+	  margin-left: 8%;
+	  margin-left: 8%;
+	}
+  }
+  

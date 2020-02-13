@@ -1,0 +1,379 @@
+
+.navbar {
+    background-color: #121518;
+}  
+
+/* the team section */
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+.our-team-head
+{
+	width:100%;
+	display:flex;
+	align-items:center;
+}
+.our-team-head h1
+{
+   	font-family: 'Kaushan Script', cursive;
+	margin-top:15%;
+	text-align:left;
+	width:37%;
+	padding-left:2%;
+	font-size:60pt;
+	color: #333;
+	text-shadow: 
+					 0 0 5px rgba(0,0,0,.05),
+					0 1px 3px rgba(0,0,0,.10),
+					0 3px 5px rgba(0,0,0,.10),
+				   0 5px 10px rgba(0,0,0,.10),
+				  0 10px 10px rgba(0,0,0,.10);
+}
+
+
+.our-team-support-image
+{
+	top:5%;
+	left:23%;
+	height:400px;
+	width:15%;
+	position: absolute;
+	margin-top:100px;
+	margin-left:100px;
+	-ms-transform: skew(-30deg,0deg);
+	-webkit-transform: skew(-30deg,0deg);
+	transform: skew(-30deg,0deg);
+	overflow: hidden;
+	
+}
+
+.our-team-support-image-inner
+{ 
+	position: absolute;
+	left:-230px;
+	width:660px;
+	height: 500px;  
+	-ms-transform: skew(30deg,0deg);
+	-webkit-transform: skew(30deg,0deg);
+	transform: skew(30deg,0deg);
+	background-image: url(https://images.pexels.com/photos/1153213/pexels-photo-1153213.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
+	background-size:cover;
+
+}
+
+.our-team-design-image
+{
+	top:5%;
+	left:43%;
+	height:400px;
+	width:15%;
+	position: absolute;
+	margin-top:100px;
+	margin-left:100px;
+	-ms-transform: skew(-30deg,0deg);
+	-webkit-transform: skew(-30deg,0deg);
+	transform: skew(-30deg,0deg);
+	overflow: hidden;
+}
+
+.our-team-design-image-inner
+{ 
+	position: absolute;
+	left:-240px;
+  top:-10px;
+	width:660px;
+	height: 500px;  
+	-ms-transform: skew(30deg,0deg);
+	-webkit-transform: skew(30deg,0deg);
+	transform: skew(30deg,0deg);
+	background-image: url(https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
+	background-size:cover;
+}
+
+
+.our-team-developer-image
+{
+	top:5%;
+	left:63%;
+	height:400px;
+	width:15%;
+	position: absolute;
+	margin-top:100px;
+	margin-left:100px;
+	-ms-transform: skew(-30deg,0deg);
+	-webkit-transform: skew(-30deg,0deg);
+	transform: skew(-30deg,0deg);
+	overflow: hidden;
+
+}
+.our-team-support-image-inner::after,
+.our-team-design-image-inner::after,
+.our-team-developer-image-inner::after
+{
+	content: '';
+	transition:all 0.5s linear;
+}
+.our-team-developer-image-inner
+{ 
+	position: absolute;
+	left:-220px;
+	width:660px;
+	height: 500px;  
+	-ms-transform: skew(30deg,0deg);
+	-webkit-transform: skew(30deg,0deg);
+	transform: skew(30deg,0deg);
+	background-image: url(https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
+	background-size:cover;
+}
+.our-team-support-image:hover .our-team-support-image-inner::after
+{
+  display: block;
+  position: relative;
+  background:#000;
+  width: 100%;
+  height:100%;
+  opacity:0.6;
+  content: '';
+}
+.our-team-support-image:hover .content-details
+{
+    color: #fff;
+    position: absolute;
+    transform: skewX(30deg);
+	top:25%;
+}
+
+.our-team-design-image:hover .our-team-design-image-inner::after
+{
+  display: block;
+  position: relative;
+  background:#000;
+  width: 100%;
+  height:100%;
+  opacity:0.6;
+  content: '';
+
+}
+.our-team-design-image:hover .content-details
+{
+    color: #fff;
+    position: absolute;
+    transform: skewX(30deg);
+	top:25%;
+}
+
+.our-team-developer-image:hover .our-team-developer-image-inner::after
+{
+  display: block;
+  position: relative;
+  background:#000;
+  width: 100%;
+  height:100%;
+  opacity:0.6;
+  content: '';
+
+}
+.our-team-developer-image:hover .content-details
+{
+    color: #fff;
+    position: absolute;
+    transform: skewX(30deg);
+	top:25%;
+}
+
+
+
+
+/* gallery section */
+.mytab{
+    font-weight: bold;
+}
+ #photo-head{
+     text-align: center;
+     font-size: 35px;
+ }
+ @media only screen and (min-width: 600px) {
+    .photo-tab{
+        width: 80%;
+        margin-left: 20%;
+        margin-right: 0
+    }
+  }
+
+  @import 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css';
+  @import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css';
+  @import 'https://fonts.googleapis.com/css?family=Raleway:100,600';
+  @import 'https://fonts.googleapis.com/css?family=Open+Sans:300';
+  
+  body {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    color: #999;
+    background-color: #fff;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0 0 20px 0;
+    text-transform: none;
+    color: rgba(254, 82, 76, 1);
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1.5;
+  }
+  
+  a:link,
+  a:active,
+  a:visited{
+    color:rgba(255,255,255,1);
+  }
+  
+  a:hover{
+    color:rgba(255,255,255,0.6);
+  }
+  
+  .gray {
+    color: #a5a5a5;
+  }
+  
+  .team{
+    margin:40px;
+  }
+  
+  .team-member {
+    margin: 15px 0;
+    padding: 0;
+  }
+  
+  .team-member figure {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .team-member figure img {
+    min-width: 100%;
+  }
+  
+  .team-member figcaption p {
+    font-size: 16px;
+  }
+  
+  .team-member figcaption ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .team-member figcaption ul {
+    visibility: visible;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+  
+  .team-member figcaption ul li {
+    display: inline-block;
+    padding: 10px;
+  }
+  
+  .team-member h4 {
+    margin: 10px 0 0;
+    padding: 0;
+  }
+  
+  .team-member figcaption {
+    padding: 50px;
+    color: transparent;
+    background-color: transparent;
+    position: absolute;
+    z-index: 996;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .team-member figure:hover figcaption {
+    visibility: visible;
+    color: #fff;
+    background: rgba(230, 78, 62, 0.9);
+    /* Primary color, can be changed via colors.css */
+    
+    height: 100%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .team-member figure:hover figcaption ul li a:hover {
+    color: rgba(49, 49, 49, .97);
+  }
+  
+  .team-member figure img {
+    -webkit-transform: scale(1) rotate(0) translateY(0);
+    -moz-transform: scale(1) rotate(0) translateY(0);
+    -o-transform: scale(1) rotate(0) translateY(0);
+    -ms-transform: scale(1) rotate(0) translateY(0);
+    transform: scale(1) rotate(0) translateY(0);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .team-member figure:hover img {
+    -webkit-transform: scale(1.1) rotate(1deg) translateY(12px);
+    -moz-transform: scale(1.1) rotate(1deg) translateY(12px);
+    -o-transform: scale(1.1) rotate(1deg) translateY(12px);
+    -ms-transform: scale(1.1) rotate(1deg) translateY(12px);
+    transform: scale(1.1) rotate(1deg) translateY(12px);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+
+/*footer section */
+footer{
+    background-color: #06172c;
+  }
+  #foot-head-1{
+    font-size: 24px;
+  }
+  #foot-head-2{
+    font-size: 24px;
+  }
+  .foot-contact span{
+    color: #d2d2d2;
+  }
+  .foot-icon a{
+    padding: 10px;
+  }
+  #copy{
+    width: 40%;
+    margin-left: 30%;
+    margin-left: 30%;
+  }
+  @media only screen and (max-width: 600px) {
+    .foot-icon a{
+      padding: 4px;
+    }
+    #copy{
+      width: 84%;
+      margin-left: 8%;
+      margin-left: 8%;
+    }
+  }

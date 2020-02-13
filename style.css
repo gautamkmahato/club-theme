@@ -1,0 +1,453 @@
+html,body {
+  background: #121518;
+}
+
+#wrapper {
+  width:100%;
+  text-align: center;
+  
+}
+
+#title {
+  margin-top: 160px;
+  vertical-align: middle;
+  z-index: 999;
+}
+@media only screen and (max-width: 600px) {
+    #title {
+        margin-top: 150px;
+        vertical-align: middle;
+        z-index: 999;
+    }      
+  }
+#title h2 {
+  color: #fff;
+  font-size: 45px;
+  font-family: "museo-slab";
+}
+
+#title h3 {
+  color: #fff;
+  font-size: 25px;
+  font-family: "museo-sans";
+  font-weight: 300
+}
+
+
+#wrapper canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto; 
+}
+@media only screen and (max-width: 600px) {
+  #wrapper canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px; 
+  }
+}
+#canvas {
+  z-index: 1;
+}
+#canvasbg {
+  z-index: -10;
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  filter: blur(3px);
+  opacity: 0.6;
+}
+
+@media only screen and (max-width: 600px) {
+    #canvasbg {
+        z-index: -10;
+        -webkit-filter: blur(1px);
+        -moz-filter: blur(1px);
+        -o-filter: blur(1px);
+        filter: blur(1px);
+        opacity: 0.6;
+    }
+  }
+
+/* my nav section */
+#mynav{
+    background-color: #121518;
+}
+/* navbar section */
+  .nav-logo {
+    font-family: "proxima-nova", "Helvetica", sans-serif;
+    letter-spacing: 1px;
+    font-size: 17px;
+  }
+  .navbar li a{
+    color: white;
+    font-family: "proxima-nova", "Helvetica", sans-serif;
+    font-size: 14px;
+  }
+  .navbar li a:hover {
+    background-color: white;
+    color: #20313b;
+  }
+  #mylogo{
+    width: 200px;
+    height: 150px;
+    margin-top: -40px;
+  }
+  @media only screen and (max-width: 600px) {
+    #mylogo{
+        width: 150px;
+        height: 100px;
+        margin-top: -20px;
+        margin-left: -10px;
+    }
+  }
+/* know more button */
+.know-btn{
+    padding: 5px;
+    width: 150px;
+    height: 50px;
+    background-color: #8ab92d;
+    color: white;
+    font-weight: 600;
+    border-radius: 25px;
+    margin-top: 30px;
+}
+
+/* landing section -----
+   ----------  */
+   @media only screen and (max-width: 600px) {
+    #title h2 {
+      color: #fff;
+      font-size: 30px;
+      font-family: "museo-slab";
+      margin-top: -20px;
+  }
+
+  #title h3 {
+    color: rgba(255, 255, 255, 0.877);
+    font-size: 17px;
+    font-family: "museo-sans";
+    font-weight: 300;
+    margin-top: -10px;
+  }
+    
+  .know-btn{
+    padding: 5px;
+    width: 120px;
+    height: 45px;
+    background-color: #8ab92d;
+    color: white;
+    font-weight: 600;
+    border-radius: 25px;
+    font-size: 12px;
+    margin-top: 30px;
+  }
+
+
+  }
+
+.landing{
+    height: 580px;
+}
+
+.p-img{
+	text-align: center;
+	position: relative;
+	top: 0px;
+}
+#landing-logo{
+	z-index: 100;
+	border-radius: 50%;
+	width: 130px;
+	height:130px;
+}
+@media only screen and (max-width: 600px) {
+  .p-img{
+    text-align: center;
+    position: relative;
+    top: -40px;
+  }
+  #landing-logo{
+    z-index: 100;
+    border-radius: 50%;
+    width: 90px;
+    height:90px;
+  }
+  
+  .countdown-timer{
+    text-align: center;
+    background: #16191d;
+    font-family: sans-serif;
+    font-weight: 100;
+    height: auto;
+    padding-bottom: 40px;
+    margin-top: -130px;
+  }
+}
+
+/* countdown timer */
+.countdown-timer{
+  background-image: linear-gradient(160deg,#8300e9 0%,#00e2db 88%)!important;
+	text-align: center;
+	background: #121614;
+  font-family: sans-serif;
+  font-weight: 100;
+  height: auto;
+  padding-bottom: 40px;
+}
+h2{
+  color: rgb(162, 253, 208);
+  font-weight: 100;
+  font-size: 40px;
+  margin: 40px 0px 20px;
+}
+
+h1{
+  color: rgb(162, 253, 208);
+  font-weight: 100;
+  font-size: 40px;
+  margin: 40px 0px 20px;
+}
+#event-tag{
+  font-size: 17px;
+}
+
+@media only screen and (max-width: 600px) {
+  h1{
+    color: rgb(162, 253, 208);
+    font-weight: 100;
+    font-size: 20px;
+    margin: 20px 0px 10px;
+  }
+
+  h2{
+    color: rgb(162, 253, 208);
+    font-weight: 100;
+    font-size: 30px;
+    margin: 40px 0px 20px;
+  }
+  
+}
+
+#clockdiv{
+	font-family: sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 20px;
+}
+
+#clockdiv > div{
+	padding: 10px;
+	border-radius: 3px;
+	background: #00BF96;
+	display: inline-block;
+}
+
+#clockdiv div > span{
+	padding: 15px;
+	border-radius: 3px;
+	background: #00816A;
+	display: inline-block;
+}
+
+.smalltext{
+	padding-top: 5px;
+	font-size: 16px;
+}
+
+#event-time-para{
+  color: #a9ce5e;
+  font-size: 21px;
+  font-weight: 600;
+}
+@media only screen and (max-width: 600px) {
+  #event-tag{
+    margin-top: -17px;
+    color: rgba(240, 248, 255, 0.842);
+  }
+  
+}
+
+
+/* ---------------------------------
+    achievement section
+ ---------------------------------- */
+.ach{
+  margin-top: 30px;
+}
+.ach-section{
+  background-color: aliceblue;
+  padding-left: 25px;
+  padding-right: 25px;
+  box-shadow: 0 50px 100px rgba(225, 225, 225, 0.15);
+  border-radius: 3px;
+}
+
+#back{
+  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.2), 0 3px 10px 0 rgba(230, 226, 226, 0.527);
+}
+
+#ach-head{
+  font-size: 35px;
+  line-height: 44px;
+  text-transform: none;
+  font-weight: 400;
+  letter-spacing: 0;
+  margin-bottom: 22px;
+  padding-top: 50px;
+  color: #242323;
+  text-align: center;
+}
+
+.card{
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.card-image{
+  width: 26%;
+  height: 100px;
+  margin-left: 37%;
+  margin-right: 37%;
+  
+}
+.card-name{
+  color: #5d5d5d;
+  font-weight: 400;
+  font-size: 1em;
+  margin-bottom: 24px;
+  font-size: 25px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .card-name{
+    color: #5d5d5d;
+    font-weight: 400;
+    font-size: 1em;
+    margin-bottom: 24px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .card-image{
+    width: 26%;
+    height: 60px;
+    margin-left: 37%;
+    margin-right: 37%;
+    
+  }
+  
+}
+
+.card-content{
+  margin-top: -20px;
+}
+.card-para{
+  color: rgb(102, 101, 101);
+  text-align: center;
+  font-weight: 350;
+  font-size: 17px;
+  
+    line-height: 140%;
+}
+.card-btn{
+  width: 44%;
+  margin-left: 29%;
+  margin-right: 29%;
+  margin-top: 20px;
+}
+@media only screen and (max-width: 600px) {
+  #ach-head{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: 30px;
+  }
+
+  .card-btn{
+    width: 64%;
+    margin-left: 18%;
+    margin-right: 18%;
+    margin-top: 20px;
+  }
+}
+.model-head{
+  color: black;
+}
+.model-para{
+  color: rgb(46, 46, 46);
+}
+
+
+/* contact section */
+#contact{
+  padding-top: 60px;
+  background-color: aliceblue;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.contact-card{
+  height: 400px;
+  padding: 10px;
+}
+.card-back{
+  background-color: #06172c;
+}
+#mycard-h4{
+  font-size: 2.54rem;
+}
+.contact-para{
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.795)
+}
+.mycard-adress{
+  color: black;
+}
+.mycard-li{
+  color:rgb(95, 93, 93);
+  font-size: 14px;
+}
+
+
+/*footer section */
+
+#foot-head-1{
+  font-size: 27px;
+  color: white;
+}
+#foot-head-2{
+  font-size: 24px;
+  color: white;
+}
+.foot-contact span{
+  color: #d2d2d2;
+  font-size: 13px;
+}
+.foot-icon a{
+  padding: 10px;
+}
+#copy{
+  width: 40%;
+  margin-left: 30%;
+  margin-left: 30%;
+  color: white;
+  font-size: 14px;
+}
+@media only screen and (max-width: 600px) {
+  .foot-icon a{
+    padding: 4px;
+  }
+  #copy{
+    width: 84%;
+    margin-left: 8%;
+    margin-left: 8%;
+  }
+}
+
